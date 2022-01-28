@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block metadescription %}
+A budding Ethical hacker and a passionate web developer.
+
+{% endblock %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+
+<div>
+    <b>Educational Details</b><p>
+    <ul>
+<li>Tutedude
+Nov-10-Dec 20-21
+Learnt Data science .
+Did projects in machine learning.
+The projects are Rainfall prediction,
+Tumor detection prediction,
+    Covid Data Analysis</li>
+<li>Union Christian College
+Nov2013-May 2015
+    Master in Business Administration Major:Finance,Minor:Marketing</li>
+<li>Toc H Institute of Science and Technology
+July-2008-may 2012
+    B-Tech –Computer Science and Engineering</li>
+
+</ul>
+</p>
+    <form class="d-flex" action="{% url 'portfolio:certification' %}" method="get">
+
+<form class="form-inline my-2 my-lg-0">
+    <h3 style="margin-left:350px; margin-bottom:.25;padding-left:100px;">My achievements</h3>
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Click here</button>
+</form></form>
+
+      <form class="d-flex" action="{% url 'portfolio:personal' %}" method="get">
+
+<form class="form-inline my-2 my-lg-0">
+    <h3 style="margin-left:350px; margin-bottom:.25;padding-left:100px;"> Personal information</h3>
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Click here</button>
+</form></form>
+</div>
+
+
+{% endblock %}
